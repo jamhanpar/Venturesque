@@ -1,0 +1,94 @@
+@import './fonts.scss';
+@import './colors.scss';
+
+.auth-form-container {
+    width          : 100%;
+    // height         : 100vh;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+}
+
+.auth-form {
+    width          : auto;
+    height         : auto;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+}
+
+.auth-form > h1 {
+    width        : 100%;
+    font-family  : $sourceSansPro;
+    font-size    : 24px;
+    font-weight  : 900;
+    margin-bottom: 8px;
+    text-align   : center;
+}
+
+.auth-form-text {
+    font-family  : $sourceSansPro;
+    font-size    : 18px;
+    margin-bottom: 38px;
+    text-align   : center;
+}
+
+.auth-form form {
+    width: 100%;
+}
+
+.auth-form > input {
+    // border       : 1px solid $inputOutline;
+    border-radius: 5px;
+    height       : 44px;
+    text-indent  : 10px;
+    margin-bottom: 17px;
+}
+
+::placeholder {
+    font-family: $sourceSansPro;
+    font-size  : 18px;
+    color      : $inputPlaceholder;
+}
+
+form div {
+    width: 100%;
+}
+
+.name-input-item {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+}
+
+.name-input-item > input {
+    width: 199px;
+}
+
+#email,
+#password {
+    border   : 1px solid $inputOutline;
+    min-width: 411px;
+}
+
+.auth-form-redirect-link,
+.login-link,
+.forgot-password-link {
+    font      : $sourceSansPro;
+    font-size : 14px;
+    color     : $inputPlaceholder;
+    text-align: right;
+}
+
+.submit-button {
+    border          : none;
+    background-color: $submitButtonColor;
+    border-radius   : 5px;
+    width           : 100%;
+    height          : 44px;
+    font-family     : $sourceSansPro;
+    color           : white;
+    font-weight     : bold;
+    margin-bottom   : 8px;
+}

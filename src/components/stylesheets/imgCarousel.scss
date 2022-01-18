@@ -1,0 +1,36 @@
+.images-container {
+    width          : 100%;
+    height         : 30%;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-around;
+    align-items    : flex-end;
+}
+
+.img-item-park {
+    width        : auto;
+    height       : 190%;
+    margin-bottom: -46px;
+}
+
+.img-item-art {
+    width        : auto;
+    height       : 55%;
+    margin-bottom: -2px;
+}
+
+.img-item-camping {
+    width        : auto;
+    height       : 65%;
+    margin-bottom: -61px;
+}
+
+.img-item-dining {
+    width : auto;
+    height: 45%;
+}
+
+.img-item-walking {
+    width : auto;
+    height: 95%;
+}

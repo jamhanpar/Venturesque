@@ -1,0 +1,204 @@
+{
+  "user": {
+    "name": "James Park"
+  },
+  "weather": {
+    "LocalObservationDateTime": "2021-08-17T17:28:00-04:00",
+    "EpochTime": 1629235680,
+    "WeatherText": "Cloudy",
+    "WeatherIcon": 7,
+    "HasPrecipitation": false,
+    "PrecipitationType": null,
+    "IsDayTime": true,
+    "Temperature": {
+    "Metric": {
+      "Value": 26.7,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "Imperial": {
+      "Value": 80,
+      "Unit": "F",
+      "UnitType": 18
+    }
+    },
+    "MobileLink": "http://www.accuweather.com/en/us/kearny-nj/07032/current-weather/339490?lang=en-us",
+    "Link": "http://www.accuweather.com/en/us/kearny-nj/07032/current-weather/339490?lang=en-us"
+  },
+  "restaurants": [
+    {
+      "id": "I6Wg1NFYAAVzM2OpsdqcXA",
+      "alias": "grand-vin-hoboken",
+      "name": "Grand Vin",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/_nTrI3aiUn50VWvMYmDpMw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/grand-vin-hoboken?adjust_creative=-bvAqe_nycKqJ89HqkNUYQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=-bvAqe_nycKqJ89HqkNUYQ",
+      "review_count": 453,
+      "categories": [
+        {
+          "alias": "wine_bars",
+          "title": "Wine Bars"
+        },
+        {
+          "alias": "italian",
+          "title": "Italian"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 40.74331,
+        "longitude": -74.0351699
+      },
+      "transactions": ["pickup", "delivery", "restaurant_reservation"],
+      "price": "$$",
+      "location": {
+        "address1": "500 Grand St",
+        "address2": "",
+        "address3": "",
+        "city": "Hoboken",
+        "zip_code": "07030",
+        "country": "US",
+        "state": "NJ",
+        "display_address": ["500 Grand St", "Hoboken, NJ 07030"]
+      },
+      "phone": "+12016560012",
+      "display_phone": "(201) 656-0012",
+      "distance": 333.3928271456026
+    },
+    {
+      "id": "muX5xoh3aOleCrSja_T_FA",
+      "alias": "il-tavolo-di-palmisano-hoboken-2",
+      "name": "IL Tavolo di’ Palmisano",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ZlZZBsrVoFIPR_OCLnQ5HQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/il-tavolo-di-palmisano-hoboken-2?adjust_creative=-bvAqe_nycKqJ89HqkNUYQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=-bvAqe_nycKqJ89HqkNUYQ",
+      "review_count": 121,
+      "categories": [
+        {
+          "alias": "italian",
+          "title": "Italian"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 40.74571,
+        "longitude": -74.03346
+      },
+      "transactions": ["delivery", "pickup"],
+      "price": "$$",
+      "location": {
+        "address1": "700 Clinton St",
+        "address2": null,
+        "address3": null,
+        "city": "Hoboken",
+        "zip_code": "07030",
+        "country": "US",
+        "state": "NJ",
+        "display_address": ["700 Clinton St", "Hoboken, NJ 07030"]
+      },
+      "phone": "+12013455980",
+      "display_phone": "(201) 345-5980",
+      "distance": 200.15470759780567
+    }
+  ],
+  "activities": [
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 40.727141,
+          "lng": -74.0381184
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 40.73198025,
+            "lng": -74.0349114
+          },
+          "southwest": {
+            "lat": 40.72232125,
+            "lng": -74.0404666
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+      "icon_background_color": "#4B96F3",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+      "name": "Newport Centre",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2166,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107748395643993535638\">Karan Shah</a>"
+          ],
+          "photo_reference": "Aap_uECN-WMyl4SZWT4iJYPTWN8EdOePSAvfIii4W0Mh9Qdj6NAOk0__nfyNPeO58QMNwCB_ulg_G8Se0k4A6x6cH2im8WHGexXr8yBGgYbxBJPh9f8bsUG4AItcpvieoTagCDavBsEgMA5rzdvi0ypk1ZmKbMUaQegPnSt4YCB1eZlLyp_v",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJL63bt1NXwokRZxRkIGSsRwQ",
+      "plus_code": {
+        "compound_code": "PXG6+VQ Jersey City, NJ, USA",
+        "global_code": "87G7PXG6+VQ"
+      },
+      "rating": 4.3,
+      "reference": "ChIJL63bt1NXwokRZxRkIGSsRwQ",
+      "scope": "GOOGLE",
+      "types": ["shopping_mall", "point_of_interest", "establishment"],
+      "user_ratings_total": 13926,
+      "vicinity": "30 Mall Drive West, Jersey City"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 40.7596315,
+          "lng": -74.0234365
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 40.7608546802915,
+            "lng": -74.02165191970849
+          },
+          "southwest": {
+            "lat": 40.7581567197085,
+            "lng": -74.02434988029151
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+      "icon_background_color": "#4B96F3",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+      "name": "Shops At Lincoln Harbor",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2988,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103219106098892226604\">skydealbreakers</a>"
+          ],
+          "photo_reference": "Aap_uECu3BqHPfHULbTTveM4CyVJvJ_mqgYzd9FV0ThwIWXa_vvcr0eXJ5Dm92e-HbWgtuny9Q8AExfpBptNaT8wxS5-EI33EVUdEMVK1R41i4soS2d8anULCg5MepkxmoBpAKDtSnB_ycTOSEINXL7kTh1AQmhPU8bvJU0YsJ4aqRtMCYEw",
+          "width": 5312
+        }
+      ],
+      "place_id": "ChIJZ_A1XdNZwokRALnXUBUh5ws",
+      "plus_code": {
+        "compound_code": "QX5G+VJ Weehawken, NJ, USA",
+        "global_code": "87G7QX5G+VJ"
+      },
+      "rating": 3.9,
+      "reference": "ChIJZ_A1XdNZwokRALnXUBUh5ws",
+      "scope": "GOOGLE",
+      "types": ["shopping_mall", "point_of_interest", "establishment"],
+      "user_ratings_total": 348,
+      "vicinity": "1000 Harbor Boulevard, Weehawken"
+    }
+  ]
+}

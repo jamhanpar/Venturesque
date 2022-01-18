@@ -1,0 +1,90 @@
+@import './fonts.scss';
+@import './colors.scss';
+
+.nav {
+    display           : flex;
+    justify-content   : space-between;
+    align-items       : center;
+    // position       : relative;
+}
+
+.logo {
+    max-height: 40px;
+    margin    : 0.5rem;
+}
+
+.toggle-button {
+    position: absolute;
+    top     : 0.80rem;
+    right   : 0.75rem;
+    display : none;
+}
+
+.navbar-links-container {
+    padding-right: 0.5rem;
+}
+
+.navbar-links {
+    margin : 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-link-item {
+    list-style: none;
+}
+
+.nav-link-item a {
+    color      : $offBlue;
+    font-weight: bold;
+}
+
+.nav-link-item a:hover {
+    color: white;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: $offBlue;
+}
+
+// // @media screen and (max-width: 768px) {}
+
+@media (max-width: 412px) {
+    .nav {
+        flex-direction: column;
+        align-items   : flex-start;
+    }
+
+    .navbar-logo-container {
+        width: 100%;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links-container {
+        display: none;
+        width  : 100%;
+    }
+
+    .navbar-links {
+        width         : 100%;
+        flex-direction: column;
+        text-align    : right;
+    }
+
+    .nav-link {
+        width: 100%;
+    }
+
+    .navbar-links-container.active {
+        display : flex;
+        position: relative;
+        padding : 0;
+    }
+}

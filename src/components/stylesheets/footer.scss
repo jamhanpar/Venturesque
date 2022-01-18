@@ -1,0 +1,21 @@
+@import "./fonts.scss";
+@import "./colors.scss";
+
+.footer {
+//   border: 1px solid red;
+  width: 100%;
+  height: 6vh;
+  background-color: $offBlue;
+}
+
+.legal-copyright {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: $sourceSansPro;
+  font-size: 13px;
+  color: $offWhite;
+}
