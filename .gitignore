@@ -30,7 +30,10 @@ yarn-error.log*
 # HIDE BEARER TOKEN Before uploading to production
 /src/hooks/config.js
 /src/actions/weather_action.js
-/config/keys.js
+# /config/keys.js
 
 # Auth
 /util/apis/auth.js
+
+# Config
+/config/keys_development.js
