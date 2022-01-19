@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Card from "../Card";
 import { fetchGooglePhoto } from "../../util/apis/activities";
 
-const Activity = ({ activity, setCurrentIdx, idx }) => {
+const Activity = ({ activity, setCurrentIdx, idx, setIsReady}) => {
   const [photoURL, setPhotoURL] = useState(null);
 
   useEffect(() => {
@@ -15,7 +15,12 @@ const Activity = ({ activity, setCurrentIdx, idx }) => {
   }, [activity]);
 
   // TODO: add loading render or consider alternative approach to pre-rendering all the activities
-  if (!photoURL) return "hello";
+  if (!photoURL) return "loading...";
+  // if (photoURL) {
+  //   setIsReady(true);
+  // } else {
+  //   setIsReady(false);
+  // }
 
   return (
     <Card

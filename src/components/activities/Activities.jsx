@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Activity from "./Activity";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
@@ -9,6 +9,8 @@ const Activities = ({
   setCurrentIdx,
   currentIdx,
 }) => {
+  const [isReady, setIsReady] = useState(true);
+
   const filteredActivities = activities.filter(
     (activity) =>
       (activity.user_ratings_total >= 20 || activity.rating >= 4) &&
@@ -24,6 +26,7 @@ const Activities = ({
       activity={activity}
       setCurrentIdx={setCurrentIdx}
       idx={idx}
+      setIsReady={setIsReady}
     />
   ));
 
@@ -38,6 +41,8 @@ const Activities = ({
   //         : b.rating + b.review_count / 100000;
   //     return bValue - aValue;
   //   });
+
+  // if (!isReady) return 'loading...';
 
   if (showMoreToggle) {
     return (
