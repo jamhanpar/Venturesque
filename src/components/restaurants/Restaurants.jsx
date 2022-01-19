@@ -29,8 +29,7 @@ const Restaurants = ({
   let displayOptions = restaurantIndex.length > 6 ? restaurantIndex.length : 6;
 
   if (showMoreToggle) {
-    return <div className="search-results">{restaurantIndex[currentIdx]}</div>;
-  } else {
+    // TODO: make slider work
     return (
       <div className="slider">
         <ul id="autoWidth" class="cs-hidden">
@@ -40,6 +39,8 @@ const Restaurants = ({
         </ul>
       </div>
     );
+  } else {
+    return <div className="search-results">{restaurantIndex[currentIdx]}</div>;
   }
 };
 

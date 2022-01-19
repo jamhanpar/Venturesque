@@ -40,8 +40,6 @@ const Activities = ({
   //   });
 
   if (showMoreToggle) {
-    return <div className="search-results">{activityIndex[currentIdx]}</div>;
-  } else {
     return (
       <div className="activities-list">
         <FaAngleLeft
@@ -59,6 +57,8 @@ const Activities = ({
         />
       </div>
     );
+  } else {
+    return <div className="search-results">{activityIndex[currentIdx]}</div>;
   }
 };
 

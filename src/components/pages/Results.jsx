@@ -126,7 +126,7 @@ const Results = () => {
         className="see-more-btn"
         onClick={() => setShowMoreToggle(!showMoreToggle)}
       >
-        {showMoreToggle ? "See More" : "Hide"}
+        {showMoreToggle ? "Hide" : "See More"}
       </button>
     </div>
   );
