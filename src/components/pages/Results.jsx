@@ -112,12 +112,6 @@ const Results = () => {
               currentIdx={currentActIdx}
             />
           </div>
-          <button
-            className="see-more-btn"
-            onClick={() => setShowMoreToggle(!showMoreToggle)}
-          >
-            {showMoreToggle ? "See More" : "Hide"}
-          </button>
         </div>
         <Map
           coord={coordinates}
@@ -127,6 +121,13 @@ const Results = () => {
           currentActIdx={currentActIdx}
         />
       </div>
+
+      <button
+        className="see-more-btn"
+        onClick={() => setShowMoreToggle(!showMoreToggle)}
+      >
+        {showMoreToggle ? "See More" : "Hide"}
+      </button>
     </div>
   );
 };
