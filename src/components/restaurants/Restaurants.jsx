@@ -28,15 +28,19 @@ const Restaurants = ({
 
   let displayOptions = restaurantIndex.length > 6 ? restaurantIndex.length : 6;
 
-  return (
-    <div className="slider">
-      <ul id="autoWidth" class="cs-hidden">
-        {getBestRestaurant
-          ? restaurantIndex[currentIdx]
-          : restaurantIndex.slice(0, displayOptions)}
-      </ul>
-    </div>
-  );
+  if (getBestRestaurant) {
+    return <div className="search-results">{restaurantIndex[currentIdx]}</div>;
+  } else {
+    return (
+      <div className="slider">
+        <ul id="autoWidth" class="cs-hidden">
+          {getBestRestaurant
+            ? restaurantIndex[currentIdx]
+            : restaurantIndex.slice(0, displayOptions)}
+        </ul>
+      </div>
+    );
+  }
 };
 
 Restaurants.propTypes = {

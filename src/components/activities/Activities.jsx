@@ -4,12 +4,17 @@ import Activity from './Activity';
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const Activities = ({activities, getBestActivity, setCurrentIdx, currentIdx}) => {
-    const filteredReviewCount = activities.filter(activity => activity.user_ratings_total >= 20);
-    const filteredRatings = filteredReviewCount.filter(activity => activity.rating >= 4 && activity.photos);
-    const sortedByReviewCount = filteredRatings.sort((a, b) => b.user_ratings_total - a.user_ratings_total);
-    const sortedByRating = sortedByReviewCount.sort((a, b) => b.rating - a.rating);
+    // const filteredReviewCount = activities.filter(activity => activity.user_ratings_total >= 20);
+    // const filteredRatings = filteredReviewCount.filter(activity => activity.rating >= 4 && activity.photos);
+    // const sortedByReviewCount = filteredRatings.sort((a, b) => b.user_ratings_total - a.user_ratings_total);
+    // const sortedByRating = sortedByReviewCount.sort((a, b) => b.rating - a.rating);
+    
+    const filteredActivities = activities.filter(activity => (activity.user_ratings_total >= 20 || activity.rating >= 4) && activity.photos);
+    const sortedActivities = filteredActivities
+      .sort((a, b) => b.user_ratings_total - a.user_ratings_total)
+      .sort((a, b) => b.rating - a.rating);
 
-    const activityIndex = sortedByRating.map((activity, idx) => (
+    const activityIndex = sortedActivities.map((activity, idx) => (
         <Activity key={ activity.place_id } activity={ activity } setCurrentIdx={ setCurrentIdx } idx={ idx }/>
     ))
 
@@ -36,7 +41,7 @@ const Activities = ({activities, getBestActivity, setCurrentIdx, currentIdx}) =>
           <div className="activities-list">
             <FaAngleLeft onClick={() => setCurrentIdx(currentIdx > 0 ? currentIdx - 1 : 0)} />
             {activityIndex.slice(0, 6)}
-            <FaAngleRight onClick={() => setCurrentIdx(currentIdx < sortedByRating.length - 1 ? currentIdx + 1 : sortedByRating.length - 1)} />
+            <FaAngleRight onClick={() => setCurrentIdx(currentIdx < sortedActivities.length - 1 ? currentIdx + 1 : sortedActivities.length - 1)} />
           </div>
         );
     }
