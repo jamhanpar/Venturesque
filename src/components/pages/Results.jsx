@@ -24,8 +24,7 @@ const Results = () => {
   const [currentActIdx, setCurrentActIdx] = useState(0);
 
   // TODO: add show more options toggles
-  // const [showRestaurantsToggle, setShowRestaurantsToggle] = useState(false);
-  // const [showActivitiesToggle, setShowActivitiesToggle] = useState(false);
+  const [showMoreToggle, setShowMoreToggle] = useState(false);
 
   let { term, location } = useParams();
   const { history } = useReactRouter();
@@ -92,65 +91,34 @@ const Results = () => {
         setCuisineTerm={setCuisineTerm}
       />
       <div className="search-results-container">
-        <div className="recommendations-container">
-          <h1 class="search-results-header">Places To Eat</h1>
-          {/* TODO: add restaurant recommendation carousel */}
-          <Restaurants
-            restaurants={restaurants}
-            getBestRestaurant={true}
-            setCurrentIdx={setCurrentRestIdx}
-            currentIdx={currentRestIdx}
-          />
-        </div>
-        <div className="recommendations-container">
-          <h1 class="search-results-header">Things To Do</h1>
-          {/* TODO: add activity recommendation carousel */}
-          <Activities
-            activities={activities}
-            getBestActivity={true}
-            setCurrentIdx={setCurrentActIdx}
-            currentIdx={currentActIdx}
-          />
-        </div>
-        {/* <div className="search-items-container">
-          <div className="restaurant-activity-container">
-            <div className="single-card-container">
-              <Restaurants
-                restaurants={restaurants}
-                getBestRestaurant={true}
-                setCurrentIdx={setCurrentRestIdx}
-                currentIdx={currentRestIdx}
-              />
-              <button
-                className="toggle-btn"
-                onClick={() => {
-                  setShowRestaurantsToggle(!showRestaurantsToggle)
-                  setShowActivitiesToggle(false)
-                }}
-              >
-                {showRestaurantsToggle ? "Hide" : "Show more..."}
-              </button>
-            </div>
-            <p className="decoration">&</p>
-            <div className="single-card-container">
-              <Activities
-                activities={activities}
-                getBestActivity={true}
-                setCurrentIdx={setCurrentActIdx}
-                currentIdx={currentActIdx}
-              />
-              <button
-                className="toggle-btn"
-                onClick={() => { 
-                  setShowActivitiesToggle(!showActivitiesToggle) 
-                  setShowRestaurantsToggle(false)
-                }}
-              >
-                {showActivitiesToggle ? "Hide" : "Show more..."}
-              </button>
-            </div>
+        <div className="options-container">
+          <div className="recommendations-container">
+            <h1 class="search-results-header">Places To Eat</h1>
+            {/* TODO: add restaurant recommendation carousel */}
+            <Restaurants
+              restaurants={restaurants}
+              showMoreToggle={showMoreToggle}
+              setCurrentIdx={setCurrentRestIdx}
+              currentIdx={currentRestIdx}
+            />
           </div>
-        </div> */}
+          <div className="recommendations-container">
+            <h1 class="search-results-header">Things To Do</h1>
+            {/* TODO: add activity recommendation carousel */}
+            <Activities
+              activities={activities}
+              showMoreToggle={showMoreToggle}
+              setCurrentIdx={setCurrentActIdx}
+              currentIdx={currentActIdx}
+            />
+          </div>
+          <button
+            className="see-more-btn"
+            onClick={() => setShowMoreToggle(!showMoreToggle)}
+          >
+            {showMoreToggle ? "See More" : "Hide"}
+          </button>
+        </div>
         <Map
           coord={coordinates}
           restaurants={restaurants}

@@ -4,7 +4,7 @@ import Restaurant from "./Restaurant";
 
 const Restaurants = ({
   restaurants,
-  getBestRestaurant,
+  showMoreToggle,
   setCurrentIdx,
   currentIdx,
 }) => {
@@ -28,13 +28,13 @@ const Restaurants = ({
 
   let displayOptions = restaurantIndex.length > 6 ? restaurantIndex.length : 6;
 
-  if (getBestRestaurant) {
+  if (showMoreToggle) {
     return <div className="search-results">{restaurantIndex[currentIdx]}</div>;
   } else {
     return (
       <div className="slider">
         <ul id="autoWidth" class="cs-hidden">
-          {getBestRestaurant
+          {showMoreToggle
             ? restaurantIndex[currentIdx]
             : restaurantIndex.slice(0, displayOptions)}
         </ul>
