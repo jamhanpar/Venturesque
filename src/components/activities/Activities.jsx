@@ -42,7 +42,7 @@ const Activities = ({
   //     return bValue - aValue;
   //   });
 
-  // if (!isReady) return 'loading...';
+  if (!isReady) return 'loading...';
 
   if (showMoreToggle) {
     return (
