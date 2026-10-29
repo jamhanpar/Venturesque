@@ -37,3 +37,4 @@ yarn-error.log*
 
 # Config
 /config/keys_development.js
+.DS_Store
